@@ -101,7 +101,7 @@ const touristPlaces = [
     id: 9,
     name: "Chothavilai Beach",
     description: "One of the longest beaches in Tamil Nadu, known for its calm waves and open shoreline.",
-    image: "../images/chot.jpg",
+    image: "images/chot.jpg",
     imageAlt: "Chothavilai Beach",
     tag: "Beach",
     location: "Near Nagercoil",
@@ -1598,3 +1598,4 @@ if (document.readyState === 'loading') {
 } else {
     init();
 }
+
