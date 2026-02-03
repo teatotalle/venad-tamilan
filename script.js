@@ -13,7 +13,7 @@ const touristPlaces = [
         id: 1,
         name: "Vivekananda Rock Memorial",
         description: "A magnificent memorial built on a small island commemorating Swami Vivekananda's historic speech here in 1892. Offers stunning panoramic views where three oceans meet.",
-        image: "https://www.makemytrip.com/tripideas/attractions/vivekananda-rock-memorial",
+        image: "assets/images/viv2.jpg",
         imageAlt: "Vivekananda Rock Memorial at sunset",
         tag: "Must Visit",
         location: "Vivekananda Rock",
@@ -24,7 +24,7 @@ const touristPlaces = [
         id: 2,
         name: "Thiruvalluvar Statue",
         description: "A towering 133-foot tall statue of the renowned Tamil poet Thiruvalluvar, standing proudly on a small island near the Rock Memorial. The world's 3rd largest statue of a poet.",
-        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
+        image: "assets/images/thiru1.jpg",
         imageAlt: "Thiruvalluvar Statue silhouette",
         tag: "Iconic",
         location: "Thiruvalluvar Statue",
@@ -33,20 +33,20 @@ const touristPlaces = [
     },
     {
         id: 3,
-        name: "Kanyakumari Beach",
-        description: "The pristine beach at India's southernmost point offers golden sands, powerful waves, and breathtaking views of sunrises and sunsets. Perfect for peaceful contemplation.",
-        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop",
-        imageAlt: "Kanyakumari Beach golden sands",
-        tag: "Beach",
-        location: "Main Beach Road",
-        duration: "1-2 hours",
-        mapLink: "https://www.google.com/maps/place/Kanyakumari+Beach/@8.0865247,77.5529715,18z/data=!3m1!4b1!4m6!3m5!1s0x3b04ed310b4e670d:0xa41f5be93b4cba9a!8m2!3d8.0866137!4d77.5544412!16s%2Fg%2F11btmdd9f_?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoASAFQAw%3D%3D"
+        name: "Sunset View Point",
+        description: "A breathtaking spot to watch the sun dip into the ocean, offering panoramic views where the sky and sea meet in brilliant shades of gold and orange.",
+        image: "assets/images/sun1.jpeg",
+        imageAlt: "Sunset View Point panorama",
+        tag: "Best View",
+        location: "Sunset Point",
+        duration: "1 hour",
+        mapLink: "https://www.google.com/maps/place/Sunset+View+Point/@8.0790678,77.5392376,17z/data=!3m1!4b1!4m6!3m5!1s0x3b04ed8b97ca7e61:0xa0627f022c4d7fd3!8m2!3d8.0790625!4d77.5418125!16s%2Fg%2F11n014_nmg?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoASAFQAw%3D%3D"
     },
     {
         id: 4,
         name: "Gandhi Memorial",
         description: "A beautiful memorial honoring Mahatma Gandhi. Features unique architecture that allows sunlight to fall on the floor exactly on his birthday (October 2nd).",
-        image: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=600&h=400&fit=crop",
+        image: "assets/images/gan.jpg",
         imageAlt: "Gandhi Memorial sunset view",
         tag: "Historical",
         location: "Gandhi Memorial Rd",
@@ -55,26 +55,491 @@ const touristPlaces = [
     },
     {
         id: 5,
-        name: "Sunset View Point",
-        description: "The perfect spot to witness magical sunsets where the sun appears to set directly into the ocean. Offers panoramic views of the confluence of three seas.",
-        image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
-        imageAlt: "Sunset View Point panorama",
-        tag: "Best View",
-        location: "Sunset Point",
+        name: "Thirparappu Waterfalls",
+        description: "A scenic waterfall surrounded by lush greenery, perfect for relaxing, photography, and enjoying the soothing sound of flowing water.",
+        image: "assets/images/tiru.jpeg",
+        imageAlt: "Thirparappu Waterfalls",
+        tag: "Best Waterfalls",
+        location: "Thirparappu",
         duration: "1 hour",
-        mapLink: "https://www.google.com/maps/place/Sunset+View+Point/@8.0790678,77.5392376,17z/data=!3m1!4b1!4m6!3m5!1s0x3b04ed8b97ca7e61:0xa0627f022c4d7fd3!8m2!3d8.0790625!4d77.5418125!16s%2Fg%2F11n014_nmg?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoASAFQAw%3D%3D"
+        mapLink: "https://www.google.com/maps/place/Thirparappu+Waterfalls/@8.391347,77.2545582,17z/data=!3m1!4b1!4m6!3m5!1s0x3b04532184a9be51:0x5a2e420cc55ecbf!8m2!3d8.3913417!4d77.2594291!16s%2Fg%2F11lkhn9f88?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoASAFQAw%3D%3D"
     },
     {
         id: 6,
-        name: "Kumari Amman Temple",
-        description: "An ancient temple dedicated to goddess Kanyakumari (Parvati). Known for its unique architecture, religious significance, and beautiful sea-facing location.",
-        image: "https://images.unsplash.com/photo-1596356455266-8566d2c5fc1c?w=600&h=400&fit=crop",
-        imageAlt: "Kumari Amman Temple entrance",
-        tag: "Religious",
-        location: "Near Beach Road",
+        name: "Mathoor Thottipalam",
+        description: "A peaceful hanging bridge over the Kodayar River, offering scenic views, cool breezes, and a calm atmosphere surrounded by lush greenery.",
+        image: "assets/images/tp.jpeg",
+        imageAlt: "Thottipalam",
+        tag: "View",
+        location: "Manalikarai",
         duration: "1-2 hours",
-        mapLink: "https://www.google.com/maps/place/Arulmigu+Devi+Kanyakumari+Bhagavati+Amman+Temple/@8.079309,77.5484025,17z/data=!3m1!4b1!4m6!3m5!1s0x3b04ed2f5a7fd99b:0x8232feae39a4f448!8m2!3d8.0793037!4d77.5509774!16s%2Fg%2F1txfml1z?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoASAFQAw%3D%3D"
-    }
+        mapLink: "https://www.google.com/maps/place/Mathoor+Aqueduct/@8.3361255,77.2921453,17z/data=!3m1!4b1!4m6!3m5!1s0x3b04569ba95b6b03:0x13b1fe7b264eee95!8m2!3d8.3361202!4d77.2947202!16s%2Fm%2F03whzv1?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+    id: 7,
+    name: "Netta",
+    description: "A peaceful village near Kanyakumari known for its greenery, calm atmosphere, and authentic local life, ideal for travelers seeking a quiet escape.",
+    image: "../images/netta.jpeg",
+    imageAlt: "Netta village Kanyakumari",
+    tag: "Village",
+    location: "Near Kanyakumari",
+    duration: "30–60 mins",
+    mapLink: "https://www.google.com/maps?q=Netta,+Kanyakumari,+Tamil+Nadu"
+    },
+    {
+    id: 8,
+    name: "Koodal River",
+    description: "A peaceful and scenic river spot near Eden Water Falls Resort, surrounded by greenery and natural beauty, perfect for relaxing and enjoying a quiet offbeat experience.",
+    image: "../images/koodal.jpeg",
+    imageAlt: "Koodal River near Eden Water Falls Resort",
+    tag: "Nature",
+    location: "Near Eden Water Falls Resort, Kanyakumari",
+    duration: "30–60 mins",
+    mapLink: "https://www.google.com/maps?q=Koodal+River+near+Eden+Water+Falls+Resort+Kanyakumari"
+},
+{
+    id: 9,
+    name: "Chothavilai Beach",
+    description: "One of the longest beaches in Tamil Nadu, known for its calm waves and open shoreline.",
+    image: "../images/chot.jpg",
+    imageAlt: "Chothavilai Beach",
+    tag: "Beach",
+    location: "Near Nagercoil",
+    duration: "1 hour",
+    mapLink: "https://www.google.com/maps?q=Chothavilai+Beach"
+},
+{
+    id: 10,
+    name: "Colachel",
+    description: "A historic coastal town known for its harbor, beaches, and colonial-era history.",
+    image: "../images/col.jpg",
+    imageAlt: "Colachel town",
+    tag: "Town",
+    location: "Colachel",
+    duration: "1–2 hours",
+    mapLink: "https://www.google.com/maps?q=Colachel"
+},
+{
+    id: 11,
+    name: "Perunchilampu Waterfalls",
+    description: "A lesser-known waterfall surrounded by greenery, ideal for nature lovers.",
+    image: "../images/per.jpg",
+    imageAlt: "Perunchilampu Waterfalls",
+    tag: "Waterfall",
+    location: "Near Kodayar",
+    duration: "1 hour",
+    mapLink: "https://www.google.com/maps?q=Perunchilampu+Waterfalls"
+},
+{
+    id: 12,
+    name: "Kalikesam",
+    description: "A forested eco-tourism spot surrounded by hills, streams, and wildlife.",
+    image: "../images/kal.jpg",
+    imageAlt: "Kalikesam forest",
+    tag: "Nature",
+    location: "Western Ghats (Kanyakumari)",
+    duration: "2–3 hours",
+    mapLink: "https://www.google.com/maps?q=Kalikesam"
+},
+{
+    id: 13,
+    name: "Keeriparai Reserve Forest",
+    description: "A lush green forest area with waterfalls, wildlife, and scenic hill views.",
+    image: "../images/keer.jpg",
+    imageAlt: "Keeriparai forest",
+    tag: "Nature",
+    location: "Near Nagercoil",
+    duration: "2–3 hours",
+    mapLink: "https://www.google.com/maps?q=Keeriparai+Reserve+Forest"
+},
+{
+    id: 14,
+    name: "Palliyadi Appa Thiruthalam",
+    description: "A sacred Christian pilgrimage site with historical and spiritual importance.",
+    image: "../images/pal.jpg",
+    imageAlt: "Palliyadi Appa Thiruthalam",
+    tag: "Religious",
+    location: "Palliyadi",
+    duration: "30 mins",
+    mapLink: "https://www.google.com/maps?q=Palliyadi+Appa+Thiruthalam"
+},
+{
+    id: 15,
+    name: "Kumari Amman Temple",
+    description: "An ancient temple dedicated to Goddess Kanyakumari, located at India’s southernmost tip.",
+    image: "../images/kum.jpg",
+    imageAlt: "Kumari Amman Temple",
+    tag: "Temple",
+    location: "Kanyakumari",
+    duration: "30–45 mins",
+    mapLink: "https://www.google.com/maps?q=Kumari+Amman+Temple"
+},
+{
+    id: 16,
+    name: "Manakudi Bird Sanctuary",
+    description: "A peaceful estuary that attracts migratory birds, ideal for bird watching and photography.",
+    image: "../images/man.jpeg",
+    imageAlt: "Manakudi Bird Sanctuary",
+    tag: "Nature",
+    location: "Manakudi",
+    duration: "1 hour",
+    mapLink: "https://www.google.com/maps?q=Manakudi+Bird+Sanctuary"
+},
+{
+    id: 17,
+    name: "Muttom Beach",
+    description: "A rocky beach known for its lighthouse, cliffs, and dramatic ocean views.",
+    image: "../images/muttum.jpeg",
+    imageAlt: "Muttom Beach",
+    tag: "Beach",
+    location: "Muttom",
+    duration: "1 hour",
+    mapLink: "https://www.google.com/maps?q=Muttom+Beach"
+},
+{
+    id: 18,
+    name: "Our Lady of Ransom Church",
+    description: "A beautiful white Gothic-style church facing the sea, one of Kanyakumari’s landmarks.",
+    image: "../images/our.jpg",
+    imageAlt: "Our Lady of Ransom Church",
+    tag: "Church",
+    location: "Kanyakumari",
+    duration: "30 mins",
+    mapLink: "https://www.google.com/maps?q=Our+Lady+of+Ransom+Church+Kanyakumari"
+},
+{
+    id: 19,
+    name: "Padmanabhapuram Palace",
+    description: "A historic wooden palace showcasing traditional Kerala architecture and royal heritage.",
+    image: "../images/pad1.jpeg",
+    imageAlt: "Padmanabhapuram Palace",
+    tag: "Historical",
+    location: "Padmanabhapuram",
+    duration: "2 hours",
+    mapLink: "https://www.google.com/maps?q=Padmanabhapuram+Palace"
+},
+{
+    id: 20,
+    name: "Sanguthurai Beach",
+    description: "A scenic beach with unique rock formations and a peaceful environment.",
+    image: "../images/san.jpg",
+    imageAlt: "Sanguthurai Beach",
+    tag: "Beach",
+    location: "Sanguthurai",
+    duration: "1 hour",
+    mapLink: "https://www.google.com/maps?q=Sanguthurai+Beach"
+},
+{
+    id: 21,
+    name: "Suchindram Temple",
+    description: "A famous temple dedicated to the trinity of Shiva, Vishnu, and Brahma.",
+    image: "../images/suc.jpg",
+    imageAlt: "Suchindram Temple",
+    tag: "Temple",
+    location: "Suchindram",
+    duration: "45 mins",
+    mapLink: "https://www.google.com/maps?q=Suchindram+Temple"
+},
+{
+    id: 22,
+    name: "Vattakottai Fort",
+    description: "A seaside fort offering panoramic ocean views and historical charm.",
+    image: "../images/vat.jpeg",
+    imageAlt: "Vattakottai Fort",
+    tag: "Historical",
+    location: "Near Nagercoil",
+    duration: "1–2 hours",
+    mapLink: "https://www.google.com/maps?q=Vattakottai+Fort"
+},
+{
+    id: 23,
+    name: "Thuckalay Pallivasal",
+    description: "A historic mosque in Thuckalay reflecting cultural harmony and heritage.",
+    image: "../images/pal1.jpg",
+    imageAlt: "Thuckalay Pallivasal",
+    tag: "Religious",
+    location: "Thuckalay",
+    duration: "20–30 mins",
+    mapLink: "https://www.google.com/maps?q=Thuckalay+Pallivasal"
+},
+{
+    id: 24,
+    name: "Lemur Beach",
+    description: "A quiet and lesser-known beach in Kanyakumari, ideal for peaceful walks and enjoying untouched coastal beauty.",
+    image: "../images/lemur.jpg",
+    imageAlt: "Lemur Beach Kanyakumari",
+    tag: "Beach",
+    location: "Near Kanyakumari",
+    duration: "45–60 mins",
+    mapLink: "https://www.google.com/maps?q=Lemur+Beach+Kanyakumari"
+},
+{
+    id: 25,
+    name: "Thengapattanam Beach",
+    description: "A scenic coastal beach near the Kerala border where a river meets the sea, offering calm surroundings and beautiful views.",
+    image: "../images/thenga.jpg",
+    imageAlt: "Thengapattanam Beach",
+    tag: "Beach",
+    location: "Thengapattanam",
+    duration: "1 hour",
+    mapLink: "https://www.google.com/maps?q=Thengapattanam+Beach"
+},
+{
+    id: 26,
+    name: "Aralvaimozhi Devasahayam Mount",
+    description: "A sacred hilltop site associated with Saint Devasahayam, offering spiritual significance and panoramic views.",
+    image: "../images/idev.jpg",
+    imageAlt: "Aralvaimozhi Devasahayam Mount",
+    tag: "Religious",
+    location: "Aralvaimozhi",
+    duration: "45 mins",
+    mapLink: "https://www.google.com/maps?q=Devasahayam+Mount+Aralvaimozhi"
+},
+{
+    id: 27,
+    name: "Kumaracoil Murugan Temple",
+    description: "A famous Murugan temple located at the foothills of the Western Ghats, surrounded by natural beauty.",
+    image: "../images/kumar.jpg",
+    imageAlt: "Kumaracoil Murugan Temple",
+    tag: "Temple",
+    location: "Kumaracoil",
+    duration: "45 mins",
+    mapLink: "https://www.google.com/maps?q=Kumaracoil+Murugan+Temple"
+},
+{
+    id: 28,
+    name: "Valli Chunai",
+    description: "A small natural water stream associated with Lord Murugan, set amidst greenery and rocky terrain.",
+    image: "../images/vali.jpg",
+    imageAlt: "Valli Chunai",
+    tag: "Nature",
+    location: "Kumaracoil",
+    duration: "30 mins",
+    mapLink: "https://www.google.com/maps?q=Valli+Chunai+Kanyakumari"
+},
+{
+    id: 29,
+    name: "Black Rock Falls",
+    description: "A seasonal waterfall known for its dark rocky surroundings and serene natural environment.",
+    image: "../images/black.jpg",
+    imageAlt: "Black Rock Falls",
+    tag: "Waterfall",
+    location: "Near Nagercoil",
+    duration: "45–60 mins",
+    mapLink: "https://www.google.com/maps?q=Black+Rock+Falls+Kanyakumari"
+},
+{
+    id: 30,
+    name: "Aruvikarai",
+    description: "A natural stream and picnic spot popular for its fresh water flow and peaceful surroundings.",
+    image: "../images/aruv.jpg",
+    imageAlt: "Aruvikarai",
+    tag: "Nature",
+    location: "Aruvikarai",
+    duration: "30–45 mins",
+    mapLink: "https://www.google.com/maps?q=Aruvikarai+Kanyakumari"
+},
+{
+    id: 31,
+    name: "Aadhikesava Perumal Temple",
+    description: "A unique religious site blending local traditions and spiritual importance.",
+    image: "../images/adi.jpg",
+    imageAlt: "Aadhikesava Perumal Temple",
+    tag: "Religious",
+    location: "Kanyakumari District",
+    duration: "30 mins",
+    mapLink: "https://www.google.com/maps/place/Sree+Adi+Kesava+Perumal+Temple/@8.3297154,77.2660786,17z/data=!3m1!4b1!4m6!3m5!1s0x3b045437abf739ad:0x2a3fe423076b5c03!8m2!3d8.3297154!4d77.2660786!16zL20vMDdqc19r?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+},
+{
+    id: 32,
+    name: "Kottar St. Xavier’s Church",
+    description: "A historic church in Kottar known for its architecture and religious heritage.",
+    image: "../images/kot.jpg",
+    imageAlt: "Kottar St Xavier Church",
+    tag: "Church",
+    location: "Kottar, Nagercoil",
+    duration: "30 mins",
+    mapLink: "https://www.google.com/maps?q=St+Xavier+Church+Kottar"
+},
+{
+    id: 33,
+    name: "Chitharal Malai Jain Temple",
+    description: "An ancient Jain cave temple carved into a hill, featuring historic inscriptions and sculptures.",
+    image: "../images/chit.jpg",
+    imageAlt: "Chitharal Malai Jain Temple",
+    tag: "Historical",
+    location: "Chitharal",
+    duration: "1 hour",
+    mapLink: "https://www.google.com/maps?q=Chitharal+Malai+Jain+Temple"
+},
+{
+    id: 34,
+    name: "Kalimalai",
+    description: "A small hill area known for its scenic views and calm atmosphere.",
+    image: "../images/kal1.jpg",
+    imageAlt: "Kalimalai",
+    tag: "Nature",
+    location: "Near Kanyakumari",
+    duration: "30 mins",
+    mapLink: "https://www.google.com/maps?q=Kalimalai+Kanyakumari"
+},
+{
+    id: 35,
+    name: "Chittar I Dam",
+    description: "A reservoir surrounded by greenery, popular for scenic views and peaceful outings.",
+    image: "../images/chit1.jpg",
+    imageAlt: "Chittar I Dam",
+    tag: "Dam",
+    location: "Near Nagercoil",
+    duration: "45 mins",
+    mapLink: "https://www.google.com/maps?q=Chittar+Dam+Kanyakumari"
+},
+{
+    id: 36,
+    name: "Pechiparai Dam",
+    description: "A major dam surrounded by forested hills, offering cool climate and scenic beauty.",
+    image: "../images/pech.jpeg",
+    imageAlt: "Pechiparai Dam",
+    tag: "Dam",
+    location: "Pechiparai",
+    duration: "1 hour",
+    mapLink: "https://www.google.com/maps?q=Pechiparai+Dam"
+},
+{
+    id: 37,
+    name: "Kodayar Powerhouse",
+    description: "A hydroelectric powerhouse area surrounded by lush greenery and river views.",
+    image: "../images/kod.jpg",
+    imageAlt: "Kodayar Powerhouse",
+    tag: "Nature",
+    location: "Kodayar",
+    duration: "30 mins",
+    mapLink: "https://www.google.com/maps?q=Kodayar+Powerhouse"
+},
+{
+    id: 38,
+    name: "Mukoodal Dam",
+    description: "A scenic dam located at the confluence of rivers, offering peaceful surroundings.",
+    image: "../images/muk.jpg",
+    imageAlt: "Mukoodal Dam",
+    tag: "Dam",
+    location: "Mukoodal",
+    duration: "45 mins",
+    mapLink: "https://www.google.com/maps?q=Mukoodal+Dam"
+},
+{
+    id: 39,
+    name: "Ulakai Aruvi",
+    description: "A hidden waterfall spot known for its natural charm and forest surroundings.",
+    image: "../images/ula.jpg",
+    imageAlt: "Ulakai Aruvi",
+    tag: "Waterfall",
+    location: "Near Kodayar",
+    duration: "1 hour",
+    mapLink: "https://www.google.com/maps?q=Ulakai+Aruvi"
+},
+{
+    id: 40,
+    name: "Nagaraja Temple",
+    description: "A famous temple in Nagercoil dedicated to Nagaraja, blending Hindu and Jain traditions.",
+    image: "../images/nag.jpg",
+    imageAlt: "Nagaraja Temple Nagercoil",
+    tag: "Temple",
+    location: "Nagercoil",
+    duration: "30 mins",
+    mapLink: "https://www.google.com/maps?q=Nagaraja+Temple+Nagercoil"
+},
+{
+    id: 41,
+    name: "Perunchani Dam",
+    description: "A large dam surrounded by hills and forests, popular for scenic views.",
+    image: "../images/per.jpg",
+    imageAlt: "Perunchani Dam",
+    tag: "Dam",
+    location: "Perunchani",
+    duration: "1 hour",
+    mapLink: "https://www.google.com/maps?q=Perunchani+Dam"
+},
+{
+    id: 42,
+    name: "Periyakadu Church & Beach",
+    description: "A peaceful coastal area with a church and beach, offering calm and scenic surroundings.",
+    image: "../images/peri.jpg",
+    imageAlt: "Periyakadu Church and Beach",
+    tag: "Beach",
+    location: "Periyakadu",
+    duration: "1 hour",
+    mapLink: "https://www.google.com/maps?q=Periyakadu+Beach"
+},
+{
+    id: 43,
+    name: "Thiruvithancode Arappally",
+    description: "One of the oldest Christian churches in India, with great historical and religious importance.",
+    image: "../images/mal.jpg",
+    imageAlt: "Thiruvithancode Arappally",
+    tag: "Historical",
+    location: "Thiruvithancode",
+    duration: "30 mins",
+    mapLink: "https://www.google.com/maps?q=Thiruvithancode+Arappally"
+},
+{
+    id: 44,
+    name: "Thirunanthikarai Cave Temple",
+    description: "An ancient rock-cut cave temple dedicated to Lord Shiva, showcasing early Dravidian architecture.",
+    image: "../images/thirum.jpg",
+    imageAlt: "Thirunanthikarai Cave Temple",
+    tag: "Temple",
+    location: "Thirunanthikarai",
+    duration: "30–45 mins",
+    mapLink: "https://www.google.com/maps?q=Thirunanthikarai+Cave+Temple"
+},
+{
+    id: 45,
+    name: "Thirunanthikarai Garden",
+    description: "A landscaped garden near the cave temple, ideal for relaxing and family visits.",
+    image: "../images/thirun.jpg",
+    imageAlt: "Thirunanthikarai Garden",
+    tag: "Park",
+    location: "Thirunanthikarai",
+    duration: "30 mins",
+    mapLink: "https://www.google.com/maps?q=Thirunanthikarai+Garden"
+},
+{
+    id: 46,
+    name: "Mandaikadu Bhagavathi Amman Temple",
+    description: "A famous coastal temple dedicated to Goddess Bhagavathi, visited by devotees throughout the year.",
+    image: "../images/manda.jpg",
+    imageAlt: "Mandaikadu Bhagavathi Amman Temple",
+    tag: "Temple",
+    location: "Mandaikadu",
+    duration: "45 mins",
+    mapLink: "https://www.google.com/maps?q=Mandaikadu+Bhagavathi+Amman+Temple"
+},
+{
+    id: 47,
+    name: "Twin Falls Kodayar",
+    description: "Twin waterfalls located in the Kodayar forest region, offering scenic views and fresh air.",
+    image: "../images/twin.jpeg",
+    imageAlt: "Twin Falls Kodayar",
+    tag: "Waterfall",
+    location: "Kodayar",
+    duration: "1 hour",
+    mapLink: "https://www.google.com/maps?q=Twin+Falls+Kodayar"
+},
+{
+    id: 48,
+    name: "Ganapathipuram Backwater",
+    description: "A calm backwater region known for boating, greenery, and sunset views.",
+    image: "../images/gana.jpg",
+    imageAlt: "Ganapathipuram Backwater",
+    tag: "Backwater",
+    location: "Ganapathipuram",
+    duration: "1 hour",
+    mapLink: "https://www.google.com/maps?q=Ganapathipuram+Backwater"
+},
+
+
+
 ];
 
 // Restaurants Data
@@ -263,7 +728,9 @@ const hotels = {
 };
 
 // Services Data
+// Only Tour Guides service is active
 const services = [
+    /*
     {
         id: 1,
         name: "Cabs & Auto Services",
@@ -286,16 +753,18 @@ const services = [
             { name: "Boat Booking Office", action: "call", value: "+919876543223" }
         ]
     },
+    */
     {
         id: 3,
         name: "Tour Guides",
         icon: "🎓",
         items: [
             { name: "Official Tourism Guides", action: "note", value: "Certified" },
-            { name: "Local Guide Association", action: "call", value: "+919876543224" },
+            { name: "Local Guide Association", action: "call", value: "+919682116101" },
             { name: "Private Tour Operators", action: "note", value: "Full day packages" }
         ]
-    },
+    }
+    /*
     {
         id: 4,
         name: "Emergency Services",
@@ -329,6 +798,7 @@ const services = [
             { name: "24/7 Medical Store", action: "note", value: "Near Bus Stand" }
         ]
     }
+    */
 ];
 
 // Travel Tips Data
@@ -446,10 +916,10 @@ const packingList = {
 const contactInfo = [
     {
         id: 1,
-        title: "📍 Tourism Office",
+        title: "📍 Venad Tamilan",
         items: [
-            "Kanyakumari Tourist Centre",
-            "+91 4652 246076",
+            "Kanyakumari Tourist Guide",
+            "+91 96821 16101",
             "tourism@kanyakumari.tn.gov.in"
         ]
     },
@@ -463,23 +933,7 @@ const contactInfo = [
             "Women Helpline: 1091"
         ]
     },
-    {
-        id: 3,
-        title: "🚌 Transport Contacts",
-        items: [
-            "Kanyakumari Bus Stand: +91 4652 246232",
-            "Nagercoil Railway: +91 4652 226565"
-        ]
-    },
-    {
-        id: 4,
-        title: "🕐 Office Hours",
-        items: [
-            "Mon - Sat: 9:00 AM - 6:00 PM",
-            "Sun: 10:00 AM - 5:00 PM",
-            "Open on all public holidays"
-        ]
-    }
+    
 ];
 
 // FAQ Data
@@ -532,29 +986,64 @@ const contactForm = document.getElementById('contactForm');
 function renderTouristPlaces() {
     const container = document.getElementById('places-container');
     if (!container) return;
-    
-    container.innerHTML = touristPlaces.map(place => `
+
+    const currentPage = document.body.dataset.page;
+
+    const sortedPlaces = [...touristPlaces].sort((a, b) =>
+    a.name.localeCompare(b.name)
+);
+
+const placesToRender =
+    currentPage === "home"
+        ? sortedPlaces.slice(0, 6)
+        : sortedPlaces;
+
+
+    container.innerHTML = placesToRender.map(place => `
+
         <article class="place-card" data-id="${place.id}" role="listitem">
             <div class="place-image">
                 <img src="${place.image}" alt="${place.imageAlt}" loading="lazy">
                 <span class="place-tag">${place.tag}</span>
             </div>
             <div class="place-content">
-                <h3>${place.name}</h3>
-                <p>${place.description}</p>
-                <div class="place-meta">
-                    <span class="location">📍 ${place.location}</span>
-                    <span class="duration">⏱️ ${place.duration}</span>
-                </div>
-                <a href="${place.mapLink}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View on Map</a>
+    <h3>${place.name}</h3>
+    <p>${place.description}</p>
+
+    <div class="place-meta">
+        <span class="location">📍 ${place.location}</span>
+        <span class="duration">⏱️ ${place.duration}</span>
+    </div>
+
+    <a href="${place.mapLink}"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn btn-secondary">
+        View on Map
+    </a>
+</div>
             </div>
         </article>
     `).join('');
+
+    // Render "More Places" button on home page only
+    const morePlacesContainer = document.getElementById('more-places-container');
+    if (morePlacesContainer && currentPage === 'home') {
+        morePlacesContainer.innerHTML = `
+            <div style="text-align: center; margin-top: 32px;">
+                <a href="places.html" class="btn btn-primary">More Places</a>
+            </div>
+        `;
+    }
 }
 
 // Render Restaurants
 function renderRestaurants(filter = 'all') {
     const container = document.getElementById('restaurants-container');
+    const section = document.getElementById('restaurants');
+    
+    // Skip rendering on home page
+    if (section && section.getAttribute('data-page') === 'home') return;
     if (!container) return;
     
     const filteredRestaurants = filter === 'all' 
@@ -584,6 +1073,11 @@ function renderRestaurants(filter = 'all') {
 
 // Render Hotels by Category
 function renderHotels() {
+    const section = document.getElementById('hotels');
+    
+    // Skip rendering on home page
+    if (section && section.getAttribute('data-page') === 'home') return;
+    
     // Budget hotels
     const budgetContainer = document.getElementById('budget-hotels-container');
     if (budgetContainer) {
@@ -875,41 +1369,70 @@ function initFAQ() {
 // Contact Form Validation
 // ============================================
 function initContactForm() {
+    if (!contactForm) return;
+
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone')?.value || '';
         const subject = document.getElementById('subject').value;
         const message = document.getElementById('message').value.trim();
-        
+
         const errors = [];
-        
+
         if (name.length < 2) {
-            errors.push('Please enter a valid name (at least 2 characters)');
+            errors.push('Please enter a valid name');
         }
-        
+
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             errors.push('Please enter a valid email address');
         }
-        
+
         if (!subject) {
             errors.push('Please select a subject');
         }
-        
+
         if (message.length < 20) {
             errors.push('Message must be at least 20 characters long');
         }
-        
+
         if (errors.length > 0) {
             showNotification(errors[0], 'error');
-        } else {
-            showNotification('Thank you for your message! We will get back to you within 24 hours.', 'success');
-            contactForm.reset();
+            return;
         }
+
+        // ✅ EMAILJS SEND
+        emailjs.send(
+            'service_anurbvd',
+            'template_ajuoux2',
+            {
+                name: name,
+                email: email,
+                phone: phone,
+                subject: subject,
+                message: message
+            }
+        )
+        .then(() => {
+            showNotification(
+                'Message sent successfully! We will get back to you soon.',
+                'success'
+            );
+            contactForm.reset();
+        })
+        .catch((error) => {
+            console.error('EmailJS Error:', error);
+            showNotification(
+                'Failed to send message. Please try again later.',
+                'error'
+            );
+        });
     });
 }
+
 
 // ============================================
 // Nearby Places Links
