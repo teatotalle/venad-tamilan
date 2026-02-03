@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tourist Place Details in Kanyakumari - Explore attractions, beaches, temples, and more at India's southernmost point">
+    <meta name="keywords" content="Kanyakumari, tourist place, details, attractions, tourism, travel, India">
+    <title>Place Details - Explore Kanyakumari</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html#home" class="nav-logo" aria-label="Go to homepage">
+                <img src="assets/images/logo4.png" alt="Explore Kanniyakumari Logo" class="nav-logo-img">
+                <span class="nav-logo-text">Venad Tamilan</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="index.html#home" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="index.html#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="places.html" class="nav-link" role="menuitem"></a>Places</li>
+                <li role="none"><a href="index.html#restaurants" class="nav-link" role="menuitem"></a></li>
+                <li role="none"><a href="index.html#hotels" class="nav-link" role="menuitem"></a></li>
+                <li role="none"><a href="index.html#services" class="nav-link" role="menuitem">Services</a></li>
+                <li role="none"><a href="index.html#map" class="nav-link" role="menuitem">Map</a></li>
+                <li role="none"><a href="index.html#tips" class="nav-link" role="menuitem">Tips</a></li>
+                <li role="none"><a href="index.html#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Place Details Section -->
+    <section id="place-details" style="padding: 120px 24px 60px;">
+        <div class="container" style="max-width: 1000px;">
+            <a href="places.html" class="btn btn-secondary" style="margin-bottom: 24px;">← Back to Places</a>
+            
+            <div id="place-content">
+                <!-- Place details will be rendered dynamically -->
+            </div>
+
+            <!-- Nearby Restaurants Section -->
+            <section id="nearby-restaurants" style="margin-top: 60px; padding-top: 60px; border-top: 1px solid var(--light-gray);">
+                <h2 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 32px; text-align: center;">Nearby Restaurants</h2>
+                <div class="restaurants-grid" id="nearby-restaurants-container" role="list">
+                    <!-- Restaurant cards will be rendered dynamically -->
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌊 Explore Kanyakumari</h3>
+                    <p>Your complete travel guide to India's southernmost point. Discover the magic where three oceans meet. Plan your perfect trip with us!</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/kanniyakumari_tourism_official?igsh=MWl3bHJzcjR2b2xsaw==" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">📷</a>
+                        <a href="https://youtube.com/@venadtamilan2.0?si=T25LVYQjsbnGEAfz" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">📺</a>
+                        <a href="https://wa.me/919682116101" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">💬</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#about">About Kanyakumari</a></li>
+                        <li><a href="places.html">Places to Visit</a></li>
+                        <li><a href="index.html#hotels">Hotels & Stay</a></li>
+                        <li><a href="index.html#restaurants">Restaurants</a></li>
+                        <li><a href="index.html#tips">Travel Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="index.html#services">Cab Services</a></li>
+                        <li><a href="index.html#services">Boat Bookings</a></li>
+                        <li><a href="index.html#services">Tour Guides</a></li>
+                        <li><a href="index.html#services">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📍 Kanyakumari, Tamil Nadu 629702</p>
+                    <p>📞 +91 4652 246076</p>
+                    <p>✉️ info@explorekanyakumari.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Explore Kanyakumari. All rights reserved.</p>
+                <p>Made with ❤️ for travelers everywhere</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Go to top">↑</button>
+
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Render place details
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const placeId = parseInt(urlParams.get('id'));
+            const placeContent = document.getElementById('place-content');
+            const nearbyRestaurantsContainer = document.getElementById('nearby-restaurants-container');
+            
+            // Find the place by ID
+            const place = touristPlaces.find(p => p.id === placeId);
+            
+            if (place) {
+                // Update page title
+                document.title = `${place.name} - Explore Kanyakumari`;
+                
+                // Render place details
+                placeContent.innerHTML = `
+                    <div class="place-details-card" style="background: var(--white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+                        <div class="place-image" style="position: relative;">
+                            <img src="${place.image}" alt="${place.imageAlt}" style="width: 100%; height: 400px; object-fit: cover;">
+                            <span class="place-tag" style="position: absolute; top: 20px; left: 20px;">${place.tag}</span>
+                        </div>
+                        <div class="place-content" style="padding: 32px;">
+                            <h1 style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 16px;">${place.name}</h1>
+                            <div class="place-meta" style="margin-bottom: 24px; display: flex; gap: 24px; flex-wrap: wrap;">
+                                <span class="location" style="color: var(--text-secondary);">📍 ${place.location}</span>
+                                <span class="duration" style="color: var(--text-secondary);">⏱️ ${place.duration}</span>
+                            </div>
+                            <p style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 32px;">${place.description}</p>
+                            <a href="${place.mapLink}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on Google Maps</a>
+                        </div>
+                    </div>
+                `;
+                
+                // Render nearby restaurants (show all restaurants as "nearby")
+                if (typeof restaurants !== 'undefined') {
+                    nearbyRestaurantsContainer.innerHTML = restaurants.map((restaurant, index) => `
+                        <article class="restaurant-card" data-category="${restaurant.categories.join(' ')}" role="listitem" style="animation-delay: ${index * 0.1}s">
+                            <div class="restaurant-image">
+                                <img src="${restaurant.image}" alt="${restaurant.imageAlt}" loading="lazy">
+                            </div>
+                            <div class="restaurant-content">
+                                <div class="restaurant-header">
+                                    <h3>${restaurant.name}</h3>
+                                </div>
+                                <p class="cuisine">${restaurant.cuisine}</p>
+                                <div class="restaurant-tags">
+                                    ${restaurant.tags.map(tag => `<span class="tag tag-${tag.toLowerCase().replace(' ', '-')}">${tag}</span>`).join('')}
+                                </div>
+                                <p class="distance">📍 ${restaurant.distance}</p>
+                                <p class="specialty">⭐ Special: ${restaurant.specialty}</p>
+                                <a href="${restaurant.mapLink}" target="_blank" rel="noopener noreferrer" class="btn btn-small">View on Map</a>
+                            </div>
+                        </article>
+                    `).join('');
+                }
+            } else {
+                placeContent.innerHTML = '<p style="text-align: center; font-size: 1.25rem; color: var(--text-secondary);">Place not found.</p>';
+                nearbyRestaurantsContainer.innerHTML = '';
+            }
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("otukfrPBd6hexuQsZ");
+  })();
+</script>
+
+</body>
+</html>
