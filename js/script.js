@@ -1115,7 +1115,8 @@ function createHotelCard(hotel, isPremium = false) {
     `;
 }
 
-// Render Services
+// Render Services (disabled - HTML only)
+/*
 function renderServices() {
     const container = document.getElementById('services-container');
     if (!container) return;
@@ -1138,8 +1139,10 @@ function renderServices() {
         </article>
     `).join('');
 }
+*/
 
-// Render Travel Tips
+// Render Travel Tips (disabled - HTML only)
+/*
 function renderTravelTips() {
     const container = document.getElementById('tips-container');
     if (!container) return;
@@ -1155,8 +1158,10 @@ function renderTravelTips() {
         </article>
     `).join('');
 }
+*/
 
-// Render Packing List
+// Render Packing List (disabled - HTML only)
+/*
 function renderPackingList() {
     const container = document.getElementById('packing-container');
     if (!container) return;
@@ -1176,8 +1181,10 @@ function renderPackingList() {
         </div>
     `;
 }
+*/
 
-// Render Contact Info
+// Render Contact Info (disabled - HTML only)
+/*
 function renderContactInfo() {
     const container = document.getElementById('contact-info-container');
     if (!container) return;
@@ -1192,8 +1199,10 @@ function renderContactInfo() {
         `).join('')}
     `;
 }
+*/
 
-// Render FAQ
+// Render FAQ (disabled - HTML only)
+/*
 function renderFAQ() {
     const container = document.getElementById('faq-list');
     if (!container) return;
@@ -1207,6 +1216,7 @@ function renderFAQ() {
         </div>
     `).join('');
 }
+*/
 
 // Render Nearby Places
 function renderNearbyPlaces() {
@@ -1234,16 +1244,6 @@ function initMobileNav() {
         navToggle.setAttribute('aria-expanded', isExpanded);
         navMenu.classList.toggle('active');
         document.body.style.overflow = isExpanded ? 'hidden' : '';
-    });
-
-    // Close mobile menu when clicking a link
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            navToggle.classList.remove('active');
-            navToggle.setAttribute('aria-expanded', 'false');
-            navMenu.classList.remove('active');
-            document.body.style.overflow = '';
-        });
     });
 
     // Close menu when clicking outside
@@ -1285,27 +1285,7 @@ function initBackToTop() {
     });
 }
 
-// ============================================
-// Smooth Scrolling
-// ============================================
-function initSmoothScroll() {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                e.preventDefault();
-                navToggle.classList.remove('active');
-                navMenu.classList.remove('active');
-                document.body.style.overflow = '';
-                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                history.pushState(null, null, targetId);
-            }
-        });
-    });
-}
+
 
 // ============================================
 // Restaurant Filter Functionality
@@ -1568,25 +1548,19 @@ function initConsoleMessage() {
 // Initialize All Functions
 // ============================================
 function init() {
-    // Render all data
-    renderTouristPlaces();
-    renderRestaurants();
-    renderHotels();
-    renderServices();
-    renderTravelTips();
-    renderPackingList();
-    renderContactInfo();
-    renderFAQ();
-    renderNearbyPlaces();
+    // Rendering disabled - HTML only
+    // renderTouristPlaces(); // removed
+    // renderRestaurants(); // removed
+    // renderHotels(); // removed
+    // renderNearbyPlaces(); // removed
     
     // Initialize interactions
     initMobileNav();
     initNavbarScroll();
     initBackToTop();
-    initSmoothScroll();
     initRestaurantFilter();
     initHotelTabs();
-    initFAQ();
+    // initFAQ(); // disabled - HTML only
     initContactForm();
     initScrollReveal();
     initConsoleMessage();
@@ -1597,4 +1571,21 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
 } else {
     init();
+}
+
+// Hide nav items on About page
+if (document.body.dataset.page === "about") {
+    document
+        .querySelectorAll(
+            'a[href="#restaurants"], a[href="#hotels"], a[href="#map"], a[href="#tips"]'
+        )
+        .forEach(link => link.parentElement.style.display = "none");
+}
+
+// HOME PAGE NAV FIX – remove Food only
+if (document.body.dataset.page === "home") {
+    const foodLink = document.querySelector('a[href="#restaurants"]');
+    if (foodLink) {
+        foodLink.parentElement.remove();
+    }
 }

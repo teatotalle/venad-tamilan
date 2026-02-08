@@ -222,12 +222,6 @@ body[data-page="home"] .nav-link[href="#hotels"] {
 }
 
 
-/* Hide Food and Hotels links on home page */
-body[data-page="home"] .nav-menu li:nth-child(4),
-body[data-page="home"] .nav-menu li:nth-child(5) {
-    display: none;
-}
-
 .nav-menu {
     display: flex;
     align-items: center;
