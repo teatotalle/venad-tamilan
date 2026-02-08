@@ -6,6 +6,7 @@
 // ============================================
 // DATA ARRAYS
 // ============================================
+console.log("SCRIPT LOADED");
 
 // Tourist Places Data
 const touristPlaces = [
@@ -1589,3 +1590,10 @@ if (document.body.dataset.page === "home") {
         foodLink.parentElement.remove();
     }
 }
+document.addEventListener("DOMContentLoaded", () => {
+  try {
+    renderTouristPlaces();
+  } catch (e) {
+    console.warn("Render skipped:", e);
+  }
+});

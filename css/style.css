@@ -6,7 +6,8 @@
 /* ============================================
    CSS Variables & Reset
    ============================================ */
-:root {
+
+   :root {
     /* Coastal Color Palette - Enhanced */
     --primary-color: #0077b6;
     --primary-dark: #005f8a;
