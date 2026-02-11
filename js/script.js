@@ -983,60 +983,50 @@ const contactForm = document.getElementById('contactForm');
 // RENDERING FUNCTIONS
 // ============================================
 
-// Render Tourist Places
+//tourist place
 function renderTouristPlaces() {
     const container = document.getElementById('places-container');
     if (!container) return;
 
-    const currentPage = document.body.dataset.page;
+    const currentPage = document.body.dataset.page || "home";
 
     const sortedPlaces = [...touristPlaces].sort((a, b) =>
-    a.name.localeCompare(b.name)
-);
+        a.name.localeCompare(b.name)
+    );
 
-const placesToRender =
-    currentPage === "home"
-        ? sortedPlaces.slice(0, 6)
-        : sortedPlaces;
-
+    const placesToRender =
+        currentPage === "home"
+            ? touristPlaces.slice(0, 6)
+            : sortedPlaces;
 
     container.innerHTML = placesToRender.map(place => `
-
-        <article class="place-card" data-id="${place.id}" role="listitem">
+        <article class="place-card">
             <div class="place-image">
                 <img src="${place.image}" alt="${place.imageAlt}" loading="lazy">
                 <span class="place-tag">${place.tag}</span>
             </div>
             <div class="place-content">
-    <h3>${place.name}</h3>
-    <p>${place.description}</p>
-
-    <div class="place-meta">
-        <span class="location">📍 ${place.location}</span>
-        <span class="duration">⏱️ ${place.duration}</span>
-    </div>
-
-    <a href="${place.mapLink}"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="btn btn-secondary">
-        View on Map
-    </a>
-</div>
+                <h3>${place.name}</h3>
+                <p>${place.description}</p>
+                <div class="place-meta">
+                    <span>📍 ${place.location}</span>
+                    <span>⏱️ ${place.duration}</span>
+                </div>
+                <a href="${place.mapLink}" target="_blank" class="btn btn-secondary">
+                    View on Map
+                </a>
             </div>
         </article>
     `).join('');
 
-    // Render "More Places" button on home page only
-    const morePlacesContainer = document.getElementById('more-places-container');
-    if (morePlacesContainer && currentPage === 'home') {
-        morePlacesContainer.innerHTML = `
-            <div style="text-align: center; margin-top: 32px;">
-                <a href="places.html" class="btn btn-primary">More Places</a>
-            </div>
+    const morePlaces = document.getElementById('more-places-container');
+    if (morePlaces && currentPage === "home") {
+        morePlaces.innerHTML = `
+            <a href="places.html" class="btn btn-primary">More Places</a>
         `;
     }
 }
+
 
 // Render Restaurants
 function renderRestaurants(filter = 'all') {
@@ -1117,7 +1107,7 @@ function createHotelCard(hotel, isPremium = false) {
 }
 
 // Render Services (disabled - HTML only)
-/*
+
 function renderServices() {
     const container = document.getElementById('services-container');
     if (!container) return;
@@ -1596,4 +1586,8 @@ document.addEventListener("DOMContentLoaded", () => {
   } catch (e) {
     console.warn("Render skipped:", e);
   }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    renderTouristPlaces();
 });
