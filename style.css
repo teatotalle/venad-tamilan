@@ -517,6 +517,11 @@ body[data-page="home"] .nav-menu li:nth-child(5) {
     transform: translateY(0);
 }
 
+.gallery-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
 /* ============================================
    Hero Section
    ============================================ */
@@ -2250,4 +2255,121 @@ img.loaded {
     background: linear-gradient(90deg, var(--light-gray) 25%, var(--bg-secondary) 50%, var(--light-gray) 75%);
     background-size: 200% 100%;
     animation: shimmer 1.5s infinite;
+}
+
+/* ============================================
+   Gallery Page Styles
+   ============================================ */
+.gallery-page-hero {
+    position: relative;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--bg-dark), var(--primary-dark));
+    text-align: center;
+    padding: 120px 24px 60px;
+}
+
+.gallery-page-hero .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(22, 33, 62, 0.85), rgba(0, 119, 182, 0.6));
+}
+
+.gallery-page-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.gallery-page-hero .hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.gallery-page-hero .hero-subtitle {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.gallery-page-section {
+    padding: 80px 24px;
+    background: var(--bg-secondary);
+}
+
+.gallery-page-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.gallery-page-grid .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    aspect-ratio: 1;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+}
+
+.gallery-page-grid .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.gallery-page-grid .gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    transform: translateY(100%);
+    transition: transform var(--transition-normal);
+}
+
+.gallery-page-grid .gallery-caption {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.gallery-page-grid .gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+}
+
+.gallery-page-grid .gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+    .gallery-page-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-page-hero .hero-title {
+        font-size: 2rem;
+    }
+
+    .gallery-page-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-page-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 }
